@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qjob Clone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/dashboard_responsive.css" />
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <!-------- Mobile view menu section -------->
+                <div class="mobile-view">
+                    <div class="logo-sec">
+                        <div class="clearfix d-flex">
+                            <div class="col-xs-6 col-6">
+                                <a href="../index.html"><img src="images/dash_logo.png" alt="" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-6 col-6 text-right">
+                                <a href="javascript:void(0);" id="MobilesidebarToggle" class="bgr-mnu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.855" height="13.913" viewBox="0 0 26.855 13.913">
+                                        <defs>
+                                        <style>
+                                            .b {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                        </defs>
+                                        <g transform="translate(0 -3)">
+                                        <path class="b"
+                                              d="M7.238,124.886H1.109a1.109,1.109,0,1,1,0-2.218H7.238a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                              transform="translate(0 -113.82)" />
+                                        <path class="b"
+                                              d="M25.736,2.218H1.119A1.109,1.109,0,1,1,1.119,0H25.736a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                              transform="translate(0 3)" />
+                                        <path class="b"
+                                              d="M16.37,247.55H1.109a1.109,1.109,0,0,1,0-2.218H16.37a1.109,1.109,0,0,1,0,2.218Zm0,0"
+                                              transform="translate(0 -230.636)" />
+                                        </g>
+                                        </svg>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="mobile-menu-link" style="display: none;">
+                        <div class="bannerSearch shadow">
+                            <div class="input-group">
+                                <span class="input-group-text border-0 bg-white" id="basic-addon1"><i class="icofont-search-1"></i></span>
+                                <input type="text" class="form-control border-0" placeholder="What are you looking for" aria-label="Username" aria-describedby="basic-addon1">
+                                <button class="btn" type="button" id="button-addon1">Search</button>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="#"><i class="icofont-dashboard"></i>Dashboard</a></li>
+                            <li><a href="#"><i class="icofont-ui-messaging"></i>Messages</a></li>
+                            <li><a href="#"><i class="icofont-wallet"></i>Wallet</a></li>
+                            <li><a href="#"><i class="icofont-package"></i>Subscription Package</a></li>
+                            <li><a href="#"><i class="icofont-user-alt-4"></i>Account Settings</a></li>
+                        </ul>
+                        <div class="top-right-btn">
+                            <ul class="list-inline header-top pull-right">
+                                <li>
+                                    <a href="#" class="icon-info">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <span class="label label-primary"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="dropdown dash-drop">
+                                        <span data-toggle="dropdown" aria-expanded="false">
+                                                <img class="img-responsive rounded-circle headr-prof-pic"
+                                                     src="images/user.jpg" alt="">
+                                                <h1>Zane Bowen<i class="icofont-caret-down"></i></h1>
+                                            </span>
+                                        <ul class="dropdown-menu nw-drp">
+                                            <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                            class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                            <li><a href="../index.html" data-original-title="" title=""><i
+                                                            class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-------- End Mobile view menu section -------->
+                <div class="user-left-side">
+                    <div class="side-bar-menu">
+                        <a href="../index.html" class="big-logo"><img src="images/dash_logo.png" class="img-responsive"></a>
+                        <a href="javascript:void(0);" class="berger" id="sidebarToggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26.855" height="13.913" viewBox="0 0 26.855 13.913">
+                                <defs>
+                                <style>
+                                    .b {
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                </defs>
+                                <g transform="translate(0 -3)">
+                                <path class="b"
+                                      d="M7.238,124.886H1.109a1.109,1.109,0,1,1,0-2.218H7.238a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 -113.82)" />
+                                <path class="b"
+                                      d="M25.736,2.218H1.119A1.109,1.109,0,1,1,1.119,0H25.736a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 3)" />
+                                <path class="b"
+                                      d="M16.37,247.55H1.109a1.109,1.109,0,0,1,0-2.218H16.37a1.109,1.109,0,0,1,0,2.218Zm0,0"
+                                      transform="translate(0 -230.636)" />
+                                </g>
+                                </svg>
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                    <h1 class="left_logo_menu">Menu</h1>
+                    <div class="available-project-toggle">
+                        <button type="button" class="btn btn-sm btn-toggle active" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                <div class="handle"></div>
+                            </button>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="icofont-dashboard"></i>Dashboard</a></li>
+                        <li class="active"><a href="#"><i class="icofont-ui-messaging"></i>Messages</a></li>
+                        <li><a href="#"><i class="icofont-wallet"></i>Wallet</a></li>
+                        <li><a href="#"><i class="icofont-package"></i>Subscription Package</a></li>
+                        <li><a href="#"><i class="icofont-user-alt-4"></i>Account Settings</a></li>
+                    </ul>
+                    <div class="copy-right text-left mt-auto">©2022 Copyright.</div>
+                </div>
+                <div class="user-dash-right">
+                    <div class="user-top-head">
+                        <div class="bannerSearch shadow">
+                            <div class="input-group">
+                                <span class="input-group-text border-0 bg-white" id="basic-addon1"><i class="icofont-search-1"></i></span>
+                                <input type="text" class="form-control border-0" placeholder="What are you looking for" aria-label="Username" aria-describedby="basic-addon1">
+                                <button class="btn" type="button" id="button-addon1">Search</button>
+                            </div>
+                        </div>
+                        <div class="top-right-btn">
+                            <ul class="list-inline header-top pull-right">
+                                <li>
+                                    <a href="#" class="icon-info">
+                                        <img src="images/bell.png" alt="" class="img-responsive">
+                                        <span class="label label-primary"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="dropdown dash-drop">
+                                        <span data-toggle="dropdown" aria-expanded="false">
+                                                <img class="rounded-circle headr-prof-pic" src="images/user.jpg" alt="">
+                                                <h1>Zane Bowen<i class="icofont-rounded-down"></i></h1>
+                                            </span>
+                                        <ul class="dropdown-menu nw-drp">
+                                            <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                            class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                            <li><a href="../index.html" data-original-title="" title=""><i
+                                                            class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="dash-bottom-part pb-0">
+                            <div class="justify-content-center">
+                                <div class="col-md-12">
+                                    <div class="frame">
+                                        <div id="sidepanel" class="sidepanel">
+                                            <div id="search">
+                                                <label><i class="fa fa-search" aria-hidden="true"></i></label>
+                                                <input type="text" placeholder="Search for people" />
+                                            </div>
+                                            <div id="contacts" class="chat_list contacts">
+                                                <ul>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status online"></span>
+                                                            <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Louis Litt <span class="date">Apr 20</span></p>
+                                                                <p class="preview">You just got LITT up, Mike.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact active">
+                                                        <div class="wrap">
+                                                            <span class="contact-status busy"></span>
+                                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Harvey Specter <span class="date">Apr 20</span></p>
+                                                                <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status away"></span>
+                                                            <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Rachel Zane <span class="date">Apr 20</span></p>
+                                                                <p class="preview">I was thinking that we could have chicken tonight, sounds good?</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status online"></span>
+                                                            <img src="http://emilcarlsson.se/assets/donnapaulsen.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Donna Paulsen <span class="date">Apr 20</span></p>
+                                                                <p class="preview">Mike, I know everything! I'm Donna..</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status busy"></span>
+                                                            <img src="http://emilcarlsson.se/assets/jessicapearson.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Jessica Pearson <span class="date">Apr 20</span></p>
+                                                                <p class="preview">Have you finished the draft on the Hinsenburg deal?</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status"></span>
+                                                            <img src="http://emilcarlsson.se/assets/haroldgunderson.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Harold Gunderson <span class="date">Apr 20</span></p>
+                                                                <p class="preview">Thanks Mike! :)</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status"></span>
+                                                            <img src="http://emilcarlsson.se/assets/danielhardman.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Daniel Hardman <span class="date">Apr 20</span></p>
+                                                                <p class="preview">We'll meet again, Mike. Tell Jessica I said 'Hi'.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status busy"></span>
+                                                            <img src="http://emilcarlsson.se/assets/katrinabennett.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Katrina Bennett <span class="date">Apr 20</span></p>
+                                                                <p class="preview">I've sent you the files for the Garrett trial.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status"></span>
+                                                            <img src="http://emilcarlsson.se/assets/charlesforstman.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Charles Forstman <span class="date">Apr 20</span></p>
+                                                                <p class="preview">Mike, this isn't over.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="contact">
+                                                        <div class="wrap">
+                                                            <span class="contact-status"></span>
+                                                            <img src="http://emilcarlsson.se/assets/jonathansidwell.png" alt="" />
+                                                            <div class="meta">
+                                                                <p class="name">Jonathan Sidwell <span class="date">Apr 20</span></p>
+                                                                <p class="preview"><span>You:</span> That's bullshit. This deal is solid.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--                                    <div id="bottom-bar">
+                                                                                        <button id="addcontact"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> <span>Add contact</span></button>
+                                                                                        <button id="settings"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> <span>Settings</span></button>
+                                                                                    </div>-->
+                                        </div>
+                                        <div class="content">
+                                            <div class="contact-profile">
+                                                <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                <p>Harvey Specter</p>
+                                                <div class="social-media camera">
+                                                    <a href="#" class="common-btn">
+                                                            View Profile
+                                                        </a>
+                                                </div>
+                                            </div>
+                                            <div class="messages">
+                                                <ul>
+                                                    <li class="sent">
+                                                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                        <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera ml-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="replies">
+                                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                        <p>When you're backed against the wall, break the god damn thing down.</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera mr-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="replies">
+                                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                        <p>Excuses don't win championships.</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera mr-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="sent">
+                                                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                        <p>Oh yeah, did Michael Jordan tell you that?</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera ml-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="replies">
+                                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                        <p>No, I told him that.</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera mr-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="replies">
+                                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                        <p>What are your choices when someone puts a gun to your head?</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera mr-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="sent">
+                                                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                                        <p>What are you talking about? You do what they say or they shoot you.</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera ml-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="replies">
+                                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                                        <p>Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                                        <span class="msg_time">8:40 AM, Today</span>
+                                                        <div class="social-media dmenu dropdown camera mr-auto">
+                                                            <a class="nav-link dropdown-toggle video_call spldrpat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right cmndrpbx sm-menu" aria-labelledby="navbarDropdown">
+                                                                <div class="menu_dflex">
+                                                                    <div class="right_link">
+                                                                        <a class="dropdown-item" href="#"><i class="icofont-trash"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="message-input">
+                                                <div class="wrap">
+                                                    <input type="text" placeholder="Write your message..." />
+                                                    <i class="icofont-simple-smile attacharea messageicon"></i>
+                                                    <i class="fa fa-paperclip attachment messageicon" aria-hidden="true"></i>
+                                                    <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of dashboard right section -->
+    </div>
+
+
+
+    <a href="#" class="scroll_top" id="scroll_top" style="display: none;"><i class="icofont-long-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript">
+        var $ = jQuery;
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll_top').show();
+                } else {
+                    $('#scroll_top').hide();
+                }
+            });
+            $('#scroll_top').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1500);
+                return false;
+            });
+        });
+        $("#sidebarToggle").on('click', function(e) {
+            e.preventDefault();
+            $("body").toggleClass("sidebar-toggled");
+            $(".user-dash-right").toggleClass("slide-right-side");
+            $(".user-left-side").toggleClass("toggled");
+        });
+        $("#MobilesidebarToggle").click(function() {
+            $(".mobile-menu-link").toggle('2000');
+        });
+    </script>
+    <script>
+        $(function() {
+
+            // We can attach the `fileselect` event to all file inputs on the page
+            $(document).on('change', ':file', function() {
+                var input = $(this),
+                    numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [numFiles, label]);
+            });
+
+            // We can watch for our custom `fileselect` event like this
+            $(document).ready(function() {
+                $(':file').on('fileselect', function(event, numFiles, label) {
+
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+                    if (input.length) {
+                        input.val(log);
+                    } else {
+                        if (log)
+                            alert(log);
+                    }
+
+                });
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $('.btn-next').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').next().addClass('active');
+        });
+        $('.btn-back').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').prev().addClass('active');
+        });
+        $('.prev').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').prev().addClass('active');
+        });
+        $(".js-example-basic-multiple").select2();
+        $(".js-example-placeholder-multiple").select2({
+            placeholder: "Pick services*"
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".cust-scroll-table").niceScroll({
+                touchbehavior: false,
+                cursorcolor: "#439DD1",
+                cursoropacitymax: 0.7,
+                cursorwidth: 5,
+                background: "#fff",
+                cursorborder: "none",
+                cursorborderradius: "5px",
+                autohidemode: false
+            });
+            $(window).scroll(function() {
+                $(".cust-scroll-table").getNiceScroll().resize();
+            });
+            $(window).resize(function() {
+                $(".cust-scroll-table").getNiceScroll().resize();
+            });
+            var nicesx = $(".field-scroll").niceScroll(".field-scroll div", {
+                touchbehavior: true,
+                cursorcolor: "#439DD1",
+                cursoropacitymax: 0.6,
+                cursorwidth: 24,
+                usetransition: true,
+                hwacceleration: true,
+                autohidemode: "hidden"
+            });
+            $(window).scroll(function() {
+                $(".field-scroll").getNiceScroll().resize();
+            });
+            $(window).resize(function() {
+                $(".field-scroll").getNiceScroll().resize();
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('select').selectpicker();
+        });
+    </script>
+    <script>
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('icofont-simple-down icofont-simple-up');
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+        $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+</body>
+
+</html>

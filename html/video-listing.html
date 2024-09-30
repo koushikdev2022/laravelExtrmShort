@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" class="mmenu-open-fade">
+<head>
+    <title>XTREME LONGSHOT</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--    <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">-->
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="header-top">
+        <div class="container">
+            <div class="top-menu-wrapper">
+                <h1 class="logo">
+                    <a href="index.html" title="XTREME LONGSHOT">
+                        <img src="images/logo.png" alt="logo"/>
+                    </a>
+                </h1>
+                <ul class="top-menu-list">
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <a class="mobile-menu-trigger" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="icofont-navigation-menu"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom-wrapper">
+                <ul class="left-menu">
+                    <li class="has-submenu">
+                        <a href="#">Footage</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Footage 1</a></li>
+                            <li><a href="#">Footage 2</a></li>
+                            <li><a href="#">Footage 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Categories</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Category 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Prices</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li class="notification active"><a href="#"><img src="images/notification.png" alt="icon"/></a></li>
+                    <li class="has-submenu">
+                        <a href="#"><img src="images/default-avter.png" alt="icon"/></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="upload">
+                        <a href="#"><i class="icofont-upload-alt"></i>upload</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--MOBILE MENU START-->
+<div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <img src="images/logo.png" alt="logo"/>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icofont-close"></i></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="m-has-submenu">
+                <a data-bs-toggle="collapse" href="#dpdn1" role="button" aria-expanded="false">Footage</a>
+                <ul class="collapse" id="dpdn1">
+                    <li><a href="#">Footage 1</a></li>
+                    <li><a href="#">Footage 2</a></li>
+                    <li><a href="#">Footage 3</a></li>
+                </ul>
+            </li>
+            <li class="m-has-submenu">
+                <a data-bs-toggle="collapse" href="#dpdn2" role="button" aria-expanded="false">Categories</a>
+                <ul class="collapse" id="dpdn2">
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Prices</a></li>
+        </ul>
+    </div>
+</div>
+<!--MOBILE MENU END-->
+<main>
+    <section class="video-listing-page-section">
+        <div class="container">
+            <div class="marketplace-wrapper">
+                <div class="left-filter">
+                    <h3><img src="images/filter-icon.png" alt="icon"/>Filters</h3>
+                    <div class="filter-box">
+                        <h4>SORT BY</h4>
+                        <ul>
+                            <li>
+                                <input type="radio" id="status1" name="status"/>
+                                <label class="radio-lbl" for="status1">Best match</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="status2" name="status"/>
+                                <label class="radio-lbl" for="status2">Newest</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="status3" name="status"/>
+                                <label class="radio-lbl" for="status3">Oldest</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="status4" name="status" checked/>
+                                <label class="radio-lbl" for="status4">Most popular</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>Category</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="Category1"/>
+                                <label class="check-lbl" for="Category1">All</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category2"/>
+                                <label class="check-lbl" for="Category2">City</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category3"/>
+                                <label class="check-lbl" for="Category3">Sport</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category4"/>
+                                <label class="check-lbl" for="Category4">Tourism</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category5"/>
+                                <label class="check-lbl" for="Category5">War</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category6"/>
+                                <label class="check-lbl" for="Category6">Cars</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category7"/>
+                                <label class="check-lbl" for="Category7">Celebration</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category8"/>
+                                <label class="check-lbl" for="Category8">Coronavirus</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Category9"/>
+                                <label class="check-lbl" for="Category9">Funs</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>DATE RANGE</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>DURATION</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>FORMATS</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>EDITORIAL VIDEO TYPE</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>People COMPOSITION</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>Specific people</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>Events</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>composition</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>viewpoint</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>IMAGE TECHNIQUE</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>LOCATIONS</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>FILMMAKERS</h4>
+                    </div>
+                    <div class="filter-box filter-closed">
+                        <h4>COLLECTIONS</h4>
+                    </div>
+                </div>
+                <div class="right-cont">
+                    <div class="right-filters">
+                        <form class="search-form">
+                            <input type="search" placeholder="What are you looking for"/>
+                            <input type="submit" value="search"/>
+                        </form>
+                        <div class="total-footage">
+                            <h3>24,480 Video Footage</h3>
+                            <ul class="list-grid-view">
+                                <li>View As: </li>
+                                <li><a href="#"><i class="icofont-navigation-menu"></i></a></li>
+                                <li><a href="#" class="active"><img src="images/grid-icon.png" alt="icon"/></a></li>
+                            </ul>
+                        </div>
+                        <ul class="filter-cat">
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Tourism</a></li>
+                            <li><a href="#">War</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Celebration</a></li>
+                            <li><a href="#">Coronavirus</a></li>
+                            <li><a href="#">Funs</a></li>
+                        </ul>
+                    </div>
+                    <div class="video-list-wrapper">
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg1.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Technology</span>
+                                     <span class="videoextab">Exclusive</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg2.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Political</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg3.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>political</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg4.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Sports</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg5.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Sports</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg6.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>War</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg7.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>War</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg8.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Sports</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg9.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Entertainment</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg10.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Trending</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg11.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Science</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg12.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Entertainment</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg13.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>War</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg14.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Sports</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg15.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Political</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg16.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>War</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg17.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>Technology</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-holder">
+                            <div class="video-box">
+                                <figure><img src="images/logo.png" alt="logo"/></figure>
+                                <a href="#" class="video-link">
+                                    <video poster="images/ftg18.png" muted>
+                                        <source src="images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <span>political</span>
+                                </a>
+                                <div class="video-box-footer">
+                                    <span><i class="icofont-clock-time"></i>00.30</span>
+                                    <span>quality 4k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loader">
+                        <img class="icn-spinner" src="images/loader.png" alt="loader"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--NEED ASSISTANCE SECTION START-->
+    <section class="need-assistance-section">
+        <div class="container">
+            <div class="left-part">
+                <h3><strong>Need Assistance?</strong> Your wish is our command.</h3>
+                <a href="#">request a call back</a>
+            </div>
+        </div>
+    </section>
+    <!--NEED ASSISTANCE SECTION END-->
+</main>
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-column-wrapper">
+                <div class="footer-column">
+                    <div class="ft-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo"/>
+                        </a>
+                    </div>
+                    <p>
+                        Xtreme long shot provides editorial videos for (news, current affairs shows, document films) Broadcast TV & Internet.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h5>Company & Info</h5>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h5>follow us</h5>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                    </ul>
+                    <h5 class="second">Contact us</h5>
+                    <p><a href="mailto:xtremelongshot@gmail.com"><i class="icofont-envelope"></i>xtremelongshot@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right-box">
+        <div class="container">
+            <p>
+                Copyright &copy; 2022 Xtreme long shot. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

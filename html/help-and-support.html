@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- <html lang="en" dir="rtl"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qjob Clone</title> 
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap RTL -->
+    <!-- <link href="assets/bootstrap5/css/bootstrap.rtl.min.css" rel="stylesheet"> -->
+
+
+
+    <!-- Select2 -->
+    <link href="assets/select2/select2.min.css" rel="stylesheet" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons  -->
+    <link href="assets/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+    <link href="assets/icofont/icofont.min.css" rel="stylesheet">
+
+    <!-- owlcarousel Slider -->
+    <link href="assets/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/owlcarousel/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!-- Custom css -->
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="assets/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- for RTL  -->
+    <!-- <body class="rtl"> -->
+
+
+
+    <!-- navbar -->
+    <nav class="navbar shadow-sm navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logoImg" src="assets/images/brand/newbrand.png" alt="">
+            </a>
+
+            <div class="dropdown ms-auto forMobile">
+                <a class="nav-link nav-outline-btn outline1 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    En
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end rtl-dropdown" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">One</a></li>
+                    <li><a class="dropdown-item" href="#">Two</a></li>
+                    <li><a class="dropdown-item" href="#">Three</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class="fa-solid fa-bars-staggered "></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Specialists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link nav-outline-btn" href="#">Get Estimate</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-green-btn " href="#"><i class="icofont-plus"></i> Create A Task </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ulBorderLeft ml-auto">
+                    <li class="nav-item dropdown forComputer">
+                        <a class="nav-link nav-outline-btn outline1 dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            En
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">One</a></li>
+                            <li><a class="dropdown-item" href="#">Two</a></li>
+                            <li><a class="dropdown-item" href="#">Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-outline-btn" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link signLink" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile side bar  -->
+    <div class="offcanvas offcanvas-end bsr_SideBar" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <img class="logoImg" src="assets/images/brand/newbrand.png" alt="">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container-fluid pt-3 pb-3 border-bottom">
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btnOutlineSignup" href="">Log In</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="btnFillSignup" href="">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <a href="#" class="accordion-button collapsed link">
+                            Find Tasks
+                        </a>
+                    </h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <a href="#" class="accordion-button collapsed link">
+                            Specialists
+                        </a>
+                    </h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <a href="#" class="accordion-button collapsed link">
+                            About Us
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="p-3 text-center">                
+                <!-- <a class="nav-outline-btn sideOutBtn" href="#">Get Estimate</a> -->    
+                <a class="nav-green-btn sideGreenBtn" href="#"><i class="icofont-plus"></i> Create A Task </a>               
+            </div>
+        </div>
+    </div>
+    <!-- end of mobile side bar  -->
+
+
+
+    <!-- page header title banner  -->
+
+    <section>
+        <div class="loginHead">
+            <div class="loginImg pageTitle">
+                <div class="container text-center">
+                    <h1>Help & Support</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of page header title banner -->
+
+    <section class="static_page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="left-contact-inner contact-left-section">
+                        <h2>Help  &amp; Support 24/7</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et dignissim justo. Curabitur at ultrices</p>
+                        <div class="media">
+                            <span class=" mr-3"><i class="icofont-phone"></i></span>
+                            <div class="media-body align-self-center">
+                                <h4>Call Us</h4>
+                                <h5>+123456789</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <span class=" mr-3"><i class="icofont-envelope"></i></span>
+                            <div class="media-body align-self-center">
+                                <h4>Send us an email</h4>
+                                <a href="mailto:admin@bordell.com">admin@bordell.com</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <span class=" mr-3"><i class="icofont-location-pin"></i></span>
+                            <div class="media-body align-self-center">
+                                <h5>Your location</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-right-section">
+                        <div class="">
+                            <form id="contact-us-form-submit" action="">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="lebel-style" for="FirstName">Name<span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="form-control">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="lebel-style" for="exampleInputEmail1">Email Address<span class="text-danger">*</span></label>
+                                            <input type="email" name="email" class="form-control right-icon" >
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label class="lebel-style" for="exampleInputEmail1">Subject<span class="text-danger">*</span></label>
+                                            <input type="text" name="subject" class="form-control right-icon" >
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label class="lebel-style" for="message">Your Message<span class="text-danger">*</span></label>
+                                            <textarea class="form-control" name="message"></textarea>
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                
+                                <button class="btn-site btn-normal" type="submit" value="submit">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer_topbx">
+            <div class="row justify-content-between align-item-center">
+                <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="footer-logo-link">
+                        <div class="logo_ftr">
+                            <a href="#" class="lgo-text"><img class="logoImg" src="assets/images/brand/newbrand.png"
+                                    alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="footer-logo-link">
+                                <h2 class="footer-title">Company &amp; Info</h2>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Help & Support</a> </li>
+                                    <li><a href="#">Testimonials</a> </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="footer-logo-link bottom_ftr">
+                                <h2 class="footer-title"></h2>
+                                <ul>
+                                    <li><a href="#">FAQ </a></li>
+                                    <li><a href="#">Create A Task</a></li>
+                                    <li><a href="#">Get A Estimate</a></li>
+                                    <li><a href="#">Find Task</a></li>
+                                    <li><a href="#">Task Categories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="footer-logo-link">
+                                <h2 class="footer-title">Legal & Policies</h2>
+                                <ul>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                    <li><a href="#">Terms & conditions </a></li>
+                                    <li><a href="#">User Agreement</a></li>
+                                    <li><a href="#">Cookie Policy</a> </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <div class="footer-logo-link footer-social-main">
+                                <h2 class="footer-title">Follow us</h2>
+                                <div class="footer-social">
+                                    <a href="https://www.facebook.com/"><i class="icofont-facebook"></i>
+                                        Facebook</a>
+                                    <a href="https://twitter.com/"><i class="icofont-twitter"></i> Twitter</a>
+                                    <a href="https://www.Linkdin.com/"><i class="icofont-linkedin"></i> LinkedIn</a>
+                                    <a href="https://www.youtube.com/"><i class="icofont-youtube-play"></i>
+                                        YouTube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end-sec">
+        <div class="container">
+            <div class="copy-right">
+                <p>Copyright 2022 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="assets/bootstrap5/js/bootstrap.bundle.js"></script>
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/select2/select2.min.js"></script>
+        <script src="assets/owlcarousel/owl.carousel.js"></script>
+        <script src="assets/js.js"></script>
+    </body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PROCUREIN</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/icofont.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href="css/select2.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap-select.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/dashboard_responsive.css" />
+
+        <link rel="stylesheet" href="css/newcss.css" />
+    </head>
+
+    <body>
+        <div class="dashboard">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-------- Mobile view menu section -------->
+                    <div class="mobile-view">
+                        <div class="logo-sec">
+                            <div class="clearfix d-flex">
+                                <div class="col-xs-6 col-5">
+                                    <a href="../index.html"><img src="images/logo.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-6 col-7 text-right">
+                                    <a class="dashWallet mr-1" href="#"> <i class="icofont-wallet"></i> $500.00 USD</a>
+                                    <a href="javascript:void(0);" id="MobilesidebarToggle" class="bgr-mnu menubaerger">
+                                        <img src="images/menu.svg" alt="" class="img-responsive">
+                                        <div class="clearfix"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="mobile-menu-link" style="display: none;">
+                            <ul>
+                                <li class="active"><a href="#"><i class="icofont-dashboard-web"></i>Dashboard</a></li>
+                                <li><a href="#"><i class="icofont-gear"></i>account settings</a></li>
+                                <li><a href="#"><i class="icofont-ui-video-play"></i>my uploaded Videos</a></li>
+                                <li><a href="#"><i class="icofont-ui-video-play"></i>my purchased videos</a></li>
+                                <li><a href="#"><i class="icofont-users-social"></i>Followers</a></li>
+                                <li><a href="#"><i class="icofont-star"></i>Following</a></li>
+                                <li><a href="#"><i class="icofont-money-bag"></i>My Earnings</a></li>
+                                <li><a href="#"><i class="icofont-ui-power"></i>Logout</a></li>
+                            </ul>
+                            <div class="top-right-btn">
+                                <ul class="list-inline header-top pull-right">
+                                    <li>
+                                        <a href="#" class="icon-info">
+                                            <i class="fa fa-bell" aria-hidden="true"></i>
+                                            <span class="label label-primary"></span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <div class="dropdown dash-drop">
+                                            <span data-toggle="dropdown" aria-expanded="false">
+                                                <img class="img-responsive rounded-circle headr-prof-pic"
+                                                     src="images/user.jpg" alt="">
+                                                <h1>Thomas<i class="icofont-caret-down"></i></h1>
+                                            </span>
+                                            <ul class="dropdown-menu nw-drp">
+                                                <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                            class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                                <li><a href="../index.html" data-original-title="" title=""><i
+                                                            class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- End Mobile view menu section -------->
+                    <div class="user-left-side">
+                        <div class="side-bar-menu">
+                            <a href="../index.html" class="big-logo"><img src="images/logo.png" class="img-responsive"></a>
+                            <a href="javascript:void(0);" class="berger" id="sidebarToggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.855" height="13.913" viewBox="0 0 26.855 13.913">
+                                <defs>
+                                <style>
+                                    .b {
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                </defs>
+                                <g transform="translate(0 -3)">
+                                <path class="b"
+                                      d="M7.238,124.886H1.109a1.109,1.109,0,1,1,0-2.218H7.238a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 -113.82)" />
+                                <path class="b"
+                                      d="M25.736,2.218H1.119A1.109,1.109,0,1,1,1.119,0H25.736a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 3)" />
+                                <path class="b"
+                                      d="M16.37,247.55H1.109a1.109,1.109,0,0,1,0-2.218H16.37a1.109,1.109,0,0,1,0,2.218Zm0,0"
+                                      transform="translate(0 -230.636)" />
+                                </g>
+                                </svg>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+
+                        <div class="available-project-toggle">
+                            <button type="button" class="up_load_btn" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                <i class="icofont-upload-alt"></i>Upload and publish
+                            </button>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="#"><i class="icofont-dashboard-web"></i>Dashboard</a></li>
+                            <li><a href="#"><i class="icofont-gear"></i>account settings</a></li>
+                            <li><a href="#"><i class="icofont-ui-video-play"></i>my uploaded Videos</a></li>
+                            <li><a href="#"><i class="icofont-ui-video-play"></i>my purchased videos</a></li>
+                            <li><a href="#"><i class="icofont-users-social"></i>Followers</a></li>
+                            <li><a href="#"><i class="icofont-star"></i>Following</a></li>
+                            <li><a href="#"><i class="icofont-money-bag"></i>My Earnings</a></li>
+                            <li><a href="#"><i class="icofont-ui-power"></i>Logout</a></li>
+                        </ul>
+
+                        <div class="copy-right text-left mt-auto">©2022 Copyright.</div>
+                    </div>
+                    <div class="user-dash-right">
+                        <div class="user-top-head">
+                            <div class="top-right-btn">
+                                <ul class="list-inline header-top pull-right">
+                                    <li>
+                                        <a href="#" class="icon-info">
+                                            <i class="fa fa-bell" aria-hidden="true"></i>
+                                            <span class="label label-primary"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dashWallet" href="#"> <i class="icofont-wallet"></i> $500.00 USD</a>
+                                    </li>
+                                    <li class="">
+                                        <div class="dropdown dash-drop">
+                                            <span data-toggle="dropdown" aria-expanded="false">
+                                                <img class="rounded-circle headr-prof-pic" src="images/user.jpg" alt="">
+                                                <h1>Thomas<i class="icofont-rounded-down"></i></h1>
+                                            </span>
+                                            <!--                                            <ul class="dropdown-menu nw-drp">
+                                                                                            <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                                                                        class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                                                                            <li><a href="../index.html" data-original-title="" title=""><i
+                                                                                                        class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                                                                            </li>
+                                                                                        </ul>-->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="dash-bottom-part pb-0">
+                                <div class="justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="dboar_listbox_arera">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>67</h4>
+                                                                <h5>videos uploaded</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                                <i class="icofont-upload-alt"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>25</h4>
+                                                                <h5>videos downloaded</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                                <i class="icofont-download"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>5354</h4>
+                                                                <h5>FOLLOWERS</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                              <i class="icofont-users-social"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>200</h4>
+                                                                <h5>Following</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                                <i class="icofont-star"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>$20,535.45</h4>
+                                                                <h5>TOTAL EARNING</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                                <i class="icofont-money-bag"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 dsh_lstbx">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="list_box">
+                                                            <div class="list_txt">
+                                                                <h4>$5,000</h4>
+                                                                <h5>Total spend</h5>
+                                                            </div>
+                                                            <div class="list_icon">
+
+                                                                <i class="icofont-coins"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_dashbord_area">
+                                            <div class="earings_box">
+                                                <div class="earning_txt">
+                                                    <h4>RECENT EARNINGS</h4>
+                                                    <h5><a href="javascript:void(0)">View All Earnings <i class="icofont-double-right"></i></a></h5>
+                                                </div>
+                                                <div class="view_gropad">
+                                                    <p>View As:</p>
+                                                    <a href="javascipr:void(0)" class="list_icon"><i class="fa fa-list" aria-hidden="true"></i></a>
+                                                    <a href="javascipr:void(0)" class="grid_icon active"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="view-box view-as-grid">
+                                                <div class="dashboard_grid">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic1.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">Sports</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">Internet only use</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$200</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic2.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">War</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">TV broadcast</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$500</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic3.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">Sports</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">Internet only use</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$200</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic4.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">Sports</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">Internet only use</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$200</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic5.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">Sports</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">Internet only use</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$200</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 dsh_bx">
+                                                            <div class="dash_grid_box">
+                                                                <div class="grid_video">
+                                                                    <video poster="images/videopic6.png" muted>
+                                                                        <source src="images/video1.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                </div>
+                                                                <h5>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.</h5>
+                                                                <a href="javascript:void(0)" class="grid_btn">Sports</a>
+                                                                <ul>
+                                                                    <li><span class="title_lft">quality</span><span class="descrb">4K</span></li>
+                                                                    <li><span class="title_lft">purpose</span><span class="descrb">Internet only use</span></li>
+                                                                    <li><span class="title_lft">license</span><span class="descrb">12 Months</span></li>
+                                                                </ul>
+                                                                <div class="row amountbx">
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>August  20, 2022</h4>
+                                                                        <h5>08:35 PM</h5>
+                                                                    </div>
+                                                                    <div class="col-md-6 amnt_bx">
+                                                                        <h4>amount received</h4>
+                                                                        <h5>$200</h5>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dashborad_listbx">
+                                                    <div class="table-responsive">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2">Video title</th>
+                                                                    <th>Category</th>
+                                                                    <th>quality</th>
+                                                                    <th>purpose</th>
+                                                                    <th>license</th>
+                                                                    <th>DATE & Time</th>
+                                                                    <th>AMOUNT</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">Sports</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">War</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">Sports</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">War</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">Sports</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">War</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="icofont-file-video"></i></td>
+                                                                    <td><h5>The Olympics NEEDS
+                                                                            This Sport!!</h5></td>
+                                                                    <td><a href="javascript:void(0)" class="btn_tble">Sports</a></td>
+                                                                    <td>4K</td>
+                                                                    <td>Internet only use</td>
+                                                                    <td>12 Months</td>
+                                                                    <td>August  20, 2022 <br> 08:35 PM</td>
+                                                                    <td>$200</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- col-lg-12 end -->  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of dashboard right section -->
+        </div>
+        <a href="#" class="scroll_top" id="scroll_top" style="display: none;"><i class="icofont-long-arrow-up"></i></a>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.js"></script>
+        <script src="js/select2.full.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript">
+            var $ = jQuery;
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#scroll_top').show();
+                    } else {
+                        $('#scroll_top').hide();
+                    }
+                });
+                $('#scroll_top').click(function () {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 1500);
+                    return false;
+                });
+            });
+            $("#sidebarToggle").on('click', function (e) {
+                e.preventDefault();
+                $("body").toggleClass("sidebar-toggled");
+                $(".user-dash-right").toggleClass("slide-right-side");
+                $(".user-left-side").toggleClass("toggled");
+            });
+            $("#MobilesidebarToggle").click(function () {
+                $(".mobile-menu-link").toggle('2000');
+            });
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            //VIDEO PLAY HOVER
+            $('.dash_grid_box').on('mouseover mouseout', function (e) {
+                const evt = e.type;
+                if (evt === 'mouseover') {
+                    $(this).find('.grid_video').children("video").trigger('play');
+                }
+                if (evt === 'mouseout') {
+                    $(this).find('.grid_video').children("video").trigger('pause');
+                }
+            });
+
+            //GRID VIEW LIST VIEW
+            $('.view_gropad a.list_icon').on('click', function () {
+                $('.view_gropad a').removeClass('active');
+                $(this).addClass('active');
+                $('.view-box').removeClass('view-as-grid');
+                $('.view-box').addClass('view-as-list');
+            });
+            $('.view_gropad a.grid_icon').on('click', function () {
+                $('.view_gropad a').removeClass('active');
+                $(this).addClass('active');
+                $('.view-box').removeClass('view-as-list');
+                $('.view-box').addClass('view-as-grid');
+            });
+        </script>
+        <script>
+            function toggleIcon(e) {
+                $(e.target).prev('.panel-heading').find(".more-less").toggleClass('icofont-simple-down icofont-simple-up');
+            }
+            $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+            $('.panel-group').on('shown.bs.collapse', toggleIcon);
+        </script>
+    </body>
+
+</html>

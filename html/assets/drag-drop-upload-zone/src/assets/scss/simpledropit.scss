@@ -1,0 +1,94 @@
+@import 'variables';
+
+.sd-hide {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sd-box-dragndrop,
+.sd-box-uploading,
+.sd-box-success,
+.sd-box-error {
+    display: none;
+}
+
+.sd-box {
+    background-color: #ffffff;
+    position: relative;
+    padding: 25px 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid $input-border-color;
+    border-radius: 2px;
+    line-height: 18px;
+
+    input[type="file"] {
+        position: absolute;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.sd-label-wrapper {
+    font-family: inherit;
+    font-size: inherit;
+
+    label {
+        color: $themeColor;
+        cursor: pointer;
+        margin-bottom: 0;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:hover,
+        &:focus {
+            color: darken($themeColor, 7.5%);
+        }
+    }
+}
+
+.sd-box {
+    // .has-advanced-upload {
+        // background-color: transparent;
+        // outline: 2px dashed black;
+        // outline-offset: -10px;
+    // }
+
+    &.is-dragover {
+        outline: 2px dashed #c2c2c2;
+        outline-offset: -10px;
+    }
+
+    &.is-uploading .sd-box-wrapper {
+        visibility: none;
+    }
+    &.is-uploading .sd-box-uploading {
+        display: block;
+    }
+}
+.sd-box.sd-advanced-upload {
+    .sd-box-browse-file {
+        display: none;
+    }
+
+    .sd-box-dragndrop {
+        display: inline;
+    }
+
+    &.is-dropped {
+        border-color: $themeColor;
+        .sd-box-dragndrop {
+            display: none;
+        }
+    }
+}

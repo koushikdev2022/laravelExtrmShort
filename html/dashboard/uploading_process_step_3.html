@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XTREME LONGSHOT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="plugins/drag-drop-upload-zone/dist/css/simpledropit.css" />
+    <link href="css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/dashboard_responsive.css" />
+
+
+
+    <link rel="stylesheet" href="css/newcss.css" />
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <!-------- Mobile view menu section -------->
+                <div class="mobile-view">
+                    <div class="logo-sec">
+                        <div class="clearfix d-flex">
+                            <div class="col-xs-6 col-5">
+                                <a href="../index.html"><img src="images/logo.png" alt="" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-6 col-7 text-right">
+                                <a class="dashWallet mr-1" href="#"> <i class="icofont-wallet"></i> $500.00 USD</a>
+                                <a href="javascript:void(0);" id="MobilesidebarToggle" class="bgr-mnu menubaerger">
+                                    <img src="images/menu.svg" alt="" class="img-responsive">
+                                    <div class="clearfix"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="mobile-menu-link" style="display: none;">
+                        <ul>
+                            <li class="active"><a href="#"><i class="icofont-dashboard-web"></i>Dashboard</a></li>
+                            <li><a href="#"><i class="icofont-gear"></i>account settings</a></li>
+                            <li><a href="#"><i class="icofont-ui-video-play"></i>my uploaded Videos</a></li>
+                            <li><a href="#"><i class="icofont-ui-video-play"></i>my purchased videos</a></li>
+                            <li><a href="#"><i class="icofont-users-social"></i>Followers</a></li>
+                            <li><a href="#"><i class="icofont-star"></i>Following</a></li>
+                            <li><a href="#"><i class="icofont-money-bag"></i>My Earnings</a></li>
+                            <li><a href="#"><i class="icofont-ui-power"></i>Logout</a></li>
+                        </ul>
+                        <div class="top-right-btn">
+                            <ul class="list-inline header-top pull-right">
+                                <li>
+                                    <a href="#" class="icon-info">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <span class="label label-primary"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <div class="dropdown dash-drop">
+                                        <span data-toggle="dropdown" aria-expanded="false">
+                                                <img class="img-responsive rounded-circle headr-prof-pic"
+                                                     src="images/user.jpg" alt="">
+                                                <h1>Thomas<i class="icofont-caret-down"></i></h1>
+                                            </span>
+                                        <ul class="dropdown-menu nw-drp">
+                                            <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                            class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                            <li><a href="../index.html" data-original-title="" title=""><i
+                                                            class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-------- End Mobile view menu section -------->
+                <div class="user-left-side">
+                    <div class="side-bar-menu">
+                        <a href="../index.html" class="big-logo"><img src="images/logo.png" class="img-responsive"></a>
+                        <a href="javascript:void(0);" class="berger" id="sidebarToggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26.855" height="13.913" viewBox="0 0 26.855 13.913">
+                                <defs>
+                                <style>
+                                    .b {
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                </defs>
+                                <g transform="translate(0 -3)">
+                                <path class="b"
+                                      d="M7.238,124.886H1.109a1.109,1.109,0,1,1,0-2.218H7.238a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 -113.82)" />
+                                <path class="b"
+                                      d="M25.736,2.218H1.119A1.109,1.109,0,1,1,1.119,0H25.736a1.109,1.109,0,1,1,0,2.218Zm0,0"
+                                      transform="translate(0 3)" />
+                                <path class="b"
+                                      d="M16.37,247.55H1.109a1.109,1.109,0,0,1,0-2.218H16.37a1.109,1.109,0,0,1,0,2.218Zm0,0"
+                                      transform="translate(0 -230.636)" />
+                                </g>
+                                </svg>
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+
+                    <ul class="ck_list">
+                        <li class=""><a href="#"><i class="icofont-pencil-alt-2"></i>Upload And Description <i class="fa fa-check-circle checkTick checkTickDone" aria-hidden="true"></i></a></li>
+                        <li class=""><a href="#"><i class="icofont-list"></i>Details <i class="fa fa-check-circle checkTick checkTickDone" aria-hidden="true"></i></a></li>
+                        <li class="active"><a href="#"><i class="icofont-dollar"></i>License And Price <i class="fa fa-check-circle checkTick" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="icofont-check" ></i>Review <i class="fa fa-check-circle checkTick" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                    <div class="copy-right text-left mt-auto">©2022 Copyright.</div>
+                </div>
+                <div class="user-dash-right">
+                    <div class="user-top-head">
+                        <div class="top-right-btn">
+                            <ul class="list-inline header-top pull-right">
+                                <li>
+                                    <a href="#" class="icon-info">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <span class="label label-primary"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dashWallet" href="#"> <i class="icofont-wallet"></i> $500.00 USD</a>
+                                </li>
+                                <li class="">
+                                    <div class="dropdown dash-drop">
+                                        <span data-toggle="dropdown" aria-expanded="false">
+                                            <img class="rounded-circle headr-prof-pic" src="images/user.jpg" alt="">
+                                            <h1>Thomas<i class="icofont-rounded-down"></i></h1>
+                                        </span>
+                                        <ul class="dropdown-menu nw-drp">
+                                            <li><a href="user_profile.html" data-original-title="" title=""><i
+                                                        class="icofont-gear"></i>&nbsp;Account Settings</a></li>
+                                            <li><a href="../index.html" data-original-title="" title=""><i
+                                                        class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="dash-bottom-part pb-0">
+                            <div class="justify-content-center">
+                                <div class="col-md-12">
+
+                                    <div class="processCard">
+                                        <div class="processHeader">
+                                            <h4>License and price</h4>
+                                            <p>Step 3 of 4</p>
+                                        </div>
+                                        <div class="processBody">
+                                            <div class="vdBox">
+                                                <div class="row align-items-end">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Video quality</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                              <option>HD</option>
+                                                              <option>4K</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i class="icofont-dollar"></i></span>
+                                                            <input type="text" class="form-control groupInput" aria-label="Amount (to the nearest dollar)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Licence for</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                              <option>Internet Only Use</option>
+                                                              <option>Other Only Use</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i class="icofont-dollar"></i></span>
+                                                            <input type="text" class="form-control groupInput" aria-label="Amount (to the nearest dollar)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="vdContent">
+                                                            <p>Price for this <br> combination
+                                                            </p>
+                                                            <h4>$35</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="vdBtn"><i class="icofont-plus-circle"></i> Add New Combination</a>
+                                            </div>
+                                            <div class="vdBox">
+                                                <div class="row align-items-end">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Video quality</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                              <option>HD</option>
+                                                              <option>4K</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i class="icofont-dollar"></i></span>
+                                                            <input type="text" class="form-control groupInput" aria-label="Amount (to the nearest dollar)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Licence for</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                              <option>Internet Only Use</option>
+                                                              <option>Other Only Use</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="input-group">
+                                                            <span class="input-group-text"><i class="icofont-dollar"></i></span>
+                                                            <input type="text" class="form-control groupInput" aria-label="Amount (to the nearest dollar)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="vdContent">
+                                                            <p>Price for this <br> combination
+                                                            </p>
+                                                            <h4>$35</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="vdBtn"><i class="icofont-plus-circle"></i> Add New Combination</a>
+                                                <a href="#" class="vdBtnDelete"><i class="icofont-bin"></i></a>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="processFooter">
+                                            <a href="#" class="dash_btn_outline mr-3">Back</a>
+                                            <a href="#" class="dash_btn_outline mr-3">Save As Draft</a>
+                                            <a href="#" class="dash_btn_green">Submit</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- col-lg-12 end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of dashboard right section -->
+    </div>
+
+
+
+    <a href="#" class="scroll_top" id="scroll_top" style="display: none;"><i class="icofont-long-arrow-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="plugins/drag-drop-upload-zone/dist/js/simpledropit.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript">
+        var $ = jQuery;
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll_top').show();
+                } else {
+                    $('#scroll_top').hide();
+                }
+            });
+            $('#scroll_top').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1500);
+                return false;
+            });
+        });
+        $("#sidebarToggle").on('click', function(e) {
+            e.preventDefault();
+            $("body").toggleClass("sidebar-toggled");
+            $(".user-dash-right").toggleClass("slide-right-side");
+            $(".user-left-side").toggleClass("toggled");
+        });
+        $("#MobilesidebarToggle").click(function() {
+            $(".mobile-menu-link").toggle('2000');
+        });
+    </script>
+    <script>
+        $(function() {
+
+            // We can attach the `fileselect` event to all file inputs on the page
+            $(document).on('change', ':file', function() {
+                var input = $(this),
+                    numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [numFiles, label]);
+            });
+
+            // We can watch for our custom `fileselect` event like this
+            $(document).ready(function() {
+                $(':file').on('fileselect', function(event, numFiles, label) {
+
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+                    if (input.length) {
+                        input.val(log);
+                    } else {
+                        if (log)
+                            alert(log);
+                    }
+
+                });
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $('.btn-next').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').next().addClass('active');
+        });
+        $('.btn-back').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').prev().addClass('active');
+        });
+        $('.prev').click(function() {
+            $(this).closest('.screen').removeClass('active');
+            $(this).closest('.screen').prev().addClass('active');
+        });
+        $(".js-example-basic-multiple").select2();
+        $(".js-example-placeholder-multiple").select2({
+            placeholder: "Pick services*"
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".cust-scroll-table").niceScroll({
+                touchbehavior: false,
+                cursorcolor: "#439DD1",
+                cursoropacitymax: 0.7,
+                cursorwidth: 5,
+                background: "#fff",
+                cursorborder: "none",
+                cursorborderradius: "5px",
+                autohidemode: false
+            });
+            $(window).scroll(function() {
+                $(".cust-scroll-table").getNiceScroll().resize();
+            });
+            $(window).resize(function() {
+                $(".cust-scroll-table").getNiceScroll().resize();
+            });
+            var nicesx = $(".field-scroll").niceScroll(".field-scroll div", {
+                touchbehavior: true,
+                cursorcolor: "#439DD1",
+                cursoropacitymax: 0.6,
+                cursorwidth: 24,
+                usetransition: true,
+                hwacceleration: true,
+                autohidemode: "hidden"
+            });
+            $(window).scroll(function() {
+                $(".field-scroll").getNiceScroll().resize();
+            });
+            $(window).resize(function() {
+                $(".field-scroll").getNiceScroll().resize();
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('select').selectpicker();
+        });
+    </script>
+    <script>
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('icofont-simple-down icofont-simple-up');
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+        $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+
+    <script>
+        new SimpleDropit($('#uploadInput')[0]);
+    </script>
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

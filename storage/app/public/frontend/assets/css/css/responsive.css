@@ -1,0 +1,390 @@
+.forMobile{
+    display: none;
+}
+
+
+
+/*Mobile devices*/
+@media only screen and (max-width : 768px) {
+    .forMobile{
+        display: block;
+    }
+    .forComputer{
+        display: none;
+    }
+    .banner_section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .bannerTitle {
+        font-size: 24px;
+        margin-top: 9px !important;
+    }
+    .bannerText {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .seractForm .form-control{
+        width: 100%;
+        border-bottom: 1px solid #eeee !important;
+        padding-bottom: 15px;;
+    }
+    .btnSearch{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .offcanvas50{
+        width: 100%;
+    }
+    .seractForm {
+        padding: 15px !important;
+    }
+    .d-flex-mnone{
+        display: block !important;
+    }
+    .owl-carousel .owl-next {
+        right: 0px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        box-shadow: -4px 2px 6px #00000030;
+    }
+    .owl-carousel .owl-prev{
+        left: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        box-shadow: 4px 2px 6px #00000030;
+    }
+    .owl-prev .fa-chevron-left {
+        left: -2px;
+    }
+    .owl-next .fa-chevron-right {
+        right: -2px;
+    }
+    .pt-6 {
+        padding-top: 3rem!important;
+    }
+    .amazing {
+        padding: 15px;
+    }
+    .btn-green{
+        margin-bottom: 15px;;
+    }
+    .rightForMobile{
+        text-align: left !important;
+    }
+    .btnSubmit {
+        font-size: 16px;
+    }
+    .anyProject h2 {
+        font-size: 28px;
+    }
+    .testiLocation p {
+        font-size: 13px;
+    }
+    .footerSocial {
+        margin-bottom: 15px;;
+    }
+    .footerTitle{
+        margin-top: 15px;;
+    }
+    .postBtn{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .bgBox {
+        padding: 10px 0;
+    }
+    .anyProject{
+        padding: 30px 0;
+    }
+    .mt-5 {
+        margin-top: 1rem!important;
+    }
+    .select2-container--default .select2-selection--single {
+        border: 0;
+    }
+    .bgBanner {
+        padding: 14px 0;
+    }
+    .bgBox h1 {
+        font-size: 45px;
+    }
+    .bgBox h5 {
+        font-size: 18px;
+    }
+    .banner_section img{
+        width: 100%;
+    }
+    .pb-5 {
+        padding-bottom: 1.6rem!important;
+    }
+    .pt-5 {
+        padding-top: 1.6rem!important;
+    }
+    .webTitle {
+        font-size: 23px;
+    }
+    .seeMore {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .mb-4 {
+        margin-bottom: 0.1rem!important;
+    }
+    .giSortInput {
+        font-size: 14px;
+        border-radius: 50px;
+        padding: 6px 30px 6px 18px;
+    }
+    .filterBox h2 {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+    .sortText {
+        font-size: 15px;
+    }
+    .jobTag a {
+        margin-right: 6px;
+        display: inline-block;
+        margin-bottom: 1px;
+        padding: 5px 11px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+    .proTitle {
+        padding: 12px 18px;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .proTitle h2 {
+        font-size: 17px;
+    }
+    .boxBtnMore{
+        position: unset;
+        margin-top: 20px;
+    }
+    .boxBudget{
+        text-align: center !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .titleFlex{
+        display: block !important;
+    }
+    .jobTime{
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 16px !important;
+    }
+    .proType{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block !important;
+    }
+    .proItemsCat{
+        width: 100% !important;
+    }
+    .proItems {
+        padding: 5px 0px;
+    }
+    .profileDash .proItems {
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .ppCmtSection .cmtext {
+        color: #666666;
+        font-size: 14px;
+    }
+    .navSearch{
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex !important;
+    }
+    .projectFSale .btnBorder {
+        font-size: 15px;
+    }
+
+    button.navbar-toggler:focus:not(:focus-visible) {
+        outline: 0;
+        box-shadow: none;
+    }
+    .logo {
+        width: 77px;
+        height: auto;
+    }
+    .mHireBtn{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .mHireBtn .btn{
+        margin-top: 0 !important;
+    }
+    .sideProfile img {
+        width: 50px;
+        height: 50px;
+    }
+    .mRow_reverse {
+        flex-direction: row-reverse;
+    }
+    .orderF{
+        order: -1!important;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .forMobile{
+        display: block;
+    }
+    .forComputer{
+        display: none;
+    }
+    .postBtn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .offcanvas50{
+        width: 100%;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 10px;
+    }
+    .banner_section img{
+        width: 100%;
+    }
+    .boxBtnMore{
+        position: unset;
+        margin-top: 20px;
+    }
+    .boxBudget{
+        text-align: center !important;
+        margin-top: 16px;
+        margin-bottom: 13px;
+    }
+    .proSecRight {
+        border-left: 1px solid #DDDDDD;
+        margin-top: 15px;
+    }
+    .proType p {
+        font-size: 12px;
+    }
+    .projectFSale .btnBorder {
+        font-size: 15px;
+    }
+    .frame .content {
+    float: right;
+    width: 59%;
+}
+
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .navbar .nav-item .nav-link {
+        font-size: 12px !important;
+    }
+    .btnBorder{
+        padding: 4px 9px;
+        font-size: 15px;
+    }
+    .amazing .nav-item {
+        font-size: 17px;
+    }
+    .bgBox h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .bgBox h5 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .banner_section{
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    .banner_section img{
+        width: 62%;
+    }
+    .mobileCenter{
+        text-align: center;
+        margin-top: 20px;;
+    }
+    .titleFlex{
+        display: block !important;
+    }
+    .jobTime{
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 13px !important;
+    }
+    .boxBudget p {
+        font-size: 13px;
+    }
+    .navSearch{
+        display: none;
+    }
+    .productBox img{
+        height: 200px;
+        object-fit: cover;
+    }
+    #home-slider .owl-nav {
+        position: absolute;
+        top: 38%;
+        width: 100%;
+    }
+    .jobBox h2 {
+        font-size: 18px;
+    }
+    .projectFSale .btnBorder {
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 1400px) {
+    .navbar .nav-item .nav-link {
+        font-size: 14px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+    .trenKey {
+        font-size: 16px;
+    }
+    .btn-keyword {
+        font-size: 12px;
+    }
+    .projectFSale .btnBorder {
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width : 1888px) {
+    .projectFSale .btnBorder {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px){
+    .col-xl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+
+
+
