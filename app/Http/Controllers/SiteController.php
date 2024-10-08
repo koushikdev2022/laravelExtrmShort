@@ -110,7 +110,7 @@ class SiteController extends Controller
             $res['content'] = $view;
 
            // $this->composeEmail($res, $email_setting, $user);
-             $this->sendActivationMail($user);
+            $this->sendActivationMail($user);
             $data['success'] = 'Success';
             $data['link'] = 'login';
             $data['message'] = 'A Verification Link has been sent on your registered email address.';

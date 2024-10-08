@@ -55,7 +55,7 @@ class UserController extends Controller
     public function videoListing()
     {
         $user = Auth()->guard('frontend')->user();
-       $data =  Project::with('info', 'likes')->where(['user_id' => $user->id, 'status' => '1'])->orderBy('id','desc')->paginate(9);
+        $data =  Project::with('info', 'likes')->where(['user_id' => $user->id, 'status' => '1'])->orderBy('id','desc')->paginate(9);
         return view('user.myVideos', compact('data'));
     }
 
